@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// VSCodeのターミナルで開いた際に tools/ にパスを通して
+		// ".\node.exe [...command]" ではなく "node [...command]" と実行できる
+		// VSCodeのプロファイル "Node portable" を定義
+		// @todo プロパティ名の通りwindowsのみなのでLinuxやMacにも対応したい
+		"terminal.integrated.shellIntegration.enabled": true,
+		"terminal.integrated.profiles.windows": {
+			"Node portable": {
+				"source": "PowerShell",
+				"icon": "terminal-powershell",
+				"args": [
+					"-NoExit",
+					"-Command",
+					"& { . \".\\.vscode\\profile.ps1\" }"
+				]
+			}
+		},
+		"editor.formatOnSave": true,
+		// "Node portable" プロファイルでVSCodeを起動するようにする
+		// @todo プロパティ名の通りwindowsのみなのでLinuxやMacにも対応したい
+		"terminal.integrated.defaultProfile.windows": "Node portable"
+	}
+}

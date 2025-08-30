@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "denoland.vscode-deno",
+    "EditorConfig.EditorConfig",
+    "ms-vscode.live-server"
+  ]
+}
