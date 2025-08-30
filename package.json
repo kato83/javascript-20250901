@@ -1,10 +1,14 @@
 {
   "name": "javascript-20250901",
   "version": "1.0.0",
+  "type": "module",
   "description": "JavaScriptランタイムNode.JSをお試し利用するパッケージ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "chalk": "^5.6.0"
+  }
 }
