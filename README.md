@@ -12,3 +12,4 @@
    > node .\index.js
    Hello world!
    ```
+   ![](./_img/02.png)
