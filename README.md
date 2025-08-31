@@ -255,16 +255,18 @@ node --test
 
 - `deepl-transform.js` の作成
 - 以下コマンド形式で実行できるようにする
-  - `node deepl-transform.js <input-file> <lang> <output-file>`
-    - `<input-file>` 翻訳元のテキスト
+  - `node ./deepl-transform.js <input-file> <lang> <output-file>`
+    - `<input-file>` 翻訳元のテキストが入力済みのテキストファイル
     - `<lang>` 翻訳後の言語
-    - `<output-file>` 翻訳結果のテキスト
+    - `<output-file>` 翻訳結果を書き込むテキストファイル
+    - 例 `node ./deepl-transform.js input.txt EN output.txt`
 - APIキーは授業中に配布したAPIキーを用いること
 - APIキーの内容は `deepl-transform.js` に含めず `.env` ファイルに以下の形式でファイル保存して管理すること  
   ```
   DEEPL_API_KEY=XXXXXXXX-XXXX-4XXX-XXXX-XXXXXXXXXXXX:XX
   ```
   - `deepl-transform.js` の内容を `fs` モジュールを用いて `.env` を読み込んで `DEEPL_API_KEY` の値を読み出して利用すること
+- 処理が正常に完了したらターミナルに `翻訳完了` とログ出力すること
 
 ### 参考
 
